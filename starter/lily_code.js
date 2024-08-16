@@ -29,6 +29,7 @@ function getUserWeight() {
     console.log("Enter your weight in kg");
     const userWeight = prompt(">");
     console.log("Your weight is:", userWeight);
+
     // create a method to take the user weight
     // and log the weight on other planets
     console.log("Your weight on other planets is:");
@@ -43,3 +44,92 @@ global.getUserWeight = getUserWeight;
 // make a comment at the bottom of the script
 // telling a user how to run the script from node
 // run in the terminal `node calculateWeight.js`
+
+
+
+
+
+
+
+// switch cases
+
+validValues = ["imperial", "metric"];
+
+
+let match = true;
+
+function runValidValues() {
+
+    for (let i = 0; i < validValues.length - 1, i++) { 
+        (
+        //idk
+        ) { 
+            match = true;
+            break;
+        }
+    }
+
+    if (value == "imperial") {
+        switch (value) {
+            case 'jump':
+                measurement = 'inches';
+                break;
+            case 'weight':
+                measurement = 'lbs';
+                break;
+            case 'push-ups':
+                measurement = 'reps';
+                break;
+            default:
+                measurement = 'units';
+        }
+    } else {
+
+        switch (value) {
+            case 'jump':
+                measurement = 'cm';
+                break;
+            case 'weight':
+                measurement = 'kg';
+                break;
+            case 'push-ups':
+                measurement = 'reps';
+                break;
+            default:
+                measurement = 'units';
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
