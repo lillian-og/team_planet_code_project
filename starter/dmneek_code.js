@@ -5,7 +5,7 @@ const alienFactors = require('./alienGravityFactors.js');
 // create a function called calculateWeightOnPlanets
 
 // pass an argument of earthWeight
-function showUserFactors(type, value) {
+function showUserFactors(factorType, fcatorPlanets, factorMeasurement, factorValue) {
     let results = {};
     let measurment;
     let factorType;
@@ -13,6 +13,8 @@ function showUserFactors(type, value) {
     let factorMeasurement;
     let factorValue;
     let factorPlanets;
+
+    console.log(`Your ${factorType} is ${factorValue} ${factorMeasurements} on ${factorPlanets}`)
 
     for (let planet in gravityFactors) {
         results[planet] = parseFloat((gravityFactors[planet] * value).toFixed(2))
@@ -40,6 +42,19 @@ function getUserInput() {
     console.log("Enter value");
     let value = prompt(">> ");
 
+    while (true) {
+        break;
+    }
+    while (true) {
+        break;
+    }
+    while (true) {
+        break;
+    }
+    while (true) {
+        break;
+    }
+
     showUserFunction(type, value);
 }
 
@@ -47,15 +62,12 @@ function getAlienInput() {
 }
 
 
-
-
-getUserInput();
-
 // return the planetWeights object from the function
 // console.log(planetWeights);
 
 global.showUserFactors = showUserFactors;
 global.getUserInput = getUserInput;
+getUserInput();
 // console.log("Your weight on other planets is:");
 // console.log(calculateWeight(100));
 // console log the planetWeights assume the function
